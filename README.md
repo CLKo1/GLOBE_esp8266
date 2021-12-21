@@ -7,4 +7,6 @@
 
 * However, I do have an idea to modify the code so not only does the ESP8266 send its data out to Max MSP, but it also listens to OSC messages from Max. I may not get around to seeing if I can effectively add this feature for a while still.  
 
-*Oct 2 2021 Update: I have been working with my life partner, Kevin Mitchell, on improvements. He has made the GLOBE send its IP address to Max MSP. This way we know what IP to send data to in order to control the LEDs. This can be turned on/off by sending the ESP a 1/0 from Max. Kevin also added the ability to accept messages from Max to control LED brightness. 
+* Oct 2 2021 Update: I have been working with my life partner, Kevin Mitchell, on improvements. He has made the GLOBE send its IP address to Max MSP. This way we know what IP to send data to in order to control the LEDs. This can be turned on/off by sending the ESP a 1/0 from Max. Kevin also added the ability to accept messages from Max to control LED brightness. 
+
+*  Dec 19, 2021 Update: There was a bug that Kevin fixed. In the Oct 2021 version, the ESP was refusing to print any data through serial unless it firsts connects to the wireless network. Now it behaves the way it did before where you can easily use wither wifi or serial. Kevin also worked on optimization. Now the loop prints much faster than previously, which is great for musical instruments.
