@@ -16,3 +16,5 @@ I have been working with my life partner, Kevin Mitchell, on improvements. He ha
 There was a bug that Kevin fixed. In the Oct 2021 version, the ESP was refusing to print any data through serial unless it firsts connects to the wireless network. Now it behaves the way it did before where you can easily use wither wifi or serial. Kevin also worked on optimization. Now the loop prints much faster than previously, which is great for musical instruments. The Max Patch that is in the Oct 19 folder should still be used with this updated Arduino Sketch. 
 
 * Jan 2, 2022 Update: We updated both the Arduino Sketch and the Max MSP patch so that if the wireless connection fails, or if the battery dies, the brightness messages being sent from Max MSP can be received by the ESP via serial. This was the last thing that needed updating so that the GLOBE can be used entirely wirelessly, or plugged in, without having to re-upload a new Arduino sketch. It can also be easily modified if we want the RGB messages to be sent from Max as well.
+
+If you experience any issues or have any questions, please let me know: https://www.chantelleko.com/contact.html
